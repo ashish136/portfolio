@@ -1,0 +1,259 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+#main-img {
+  height: 100%;
+  width: 100%;
+}
+#home {
+  background-image: url("../Images/background/adult-black-and-white-boy-977607.jpg");
+  background-attachment: fixed;
+  height: 722px;
+  background-size: cover;
+  background-position: center center;
+  /* z-index: 1; */
+  position: relative;
+}
+#home:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+}
+#header {
+  width: 100%;
+  margin-top: 20px;
+  position: fixed;
+  z-index: 2;
+  transition: all 0.4s linear;
+}
+#logo {
+  display: inline;
+  margin-left: 7%;
+  display: none;
+}
+#logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+#myNav {
+  display: inline;
+  margin-left: 40%;
+}
+#myNav ul {
+  list-style-type: none;
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+#myNav ul li {
+  display: inline;
+  margin-right: 2%;
+}
+
+#myNav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#nameInfo {
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  z-index: 1;
+  display: none;
+}
+
+#nameInfo h1 {
+  text-align: center;
+  font-size: 85px;
+  font-weight: 700;
+  color: #18ba60;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0px;
+}
+
+#nameInfo div {
+  width: 30%;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: center;
+}
+#nameInfo div span {
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+}
+
+#header.header-white {
+  background: #fff;
+  margin: 0px;
+  padding: 12px 0px 15px 0px;
+  box-shadow: 0 0 10px #222;
+}
+
+#header.header-white #logo a {
+  color: #18ba60;
+}
+
+#header.header-white #myNav ul li a {
+  color: #000;
+}
+/*styles for about section starts*/
+#about {
+  padding: 7%;
+}
+.my-photo {
+  float: left;
+  width: 35%;
+}
+.my-description {
+  display: inline-block;
+  width: 61%;
+  margin-left: 4%;
+}
+.my-photo img {
+  width: 100%;
+  height: 500px;
+}
+.my-description .tabs {
+  margin-bottom: 75px;
+}
+.my-description .tabs ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.my-description .tabs ul li {
+  display: inline-block;
+  width: 49.5%;
+  text-align: center;
+}
+.my-description .tabs ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4% 20% 2% 20%;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  border-bottom: 2px solid #ddd;
+  transition: all 0.4s ease-in-out;
+}
+.my-description .tabs ul li.active > a {
+  color: #18ba60;
+  border-bottom: 2px solid #18ba60;
+}
+#section2 {
+  display: none;
+}
+#section1 {
+  display: block;
+}
+#section1 h4 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+#section1 h4 span {
+  color: #18ba60;
+}
+#section1 div {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+  font-size: 15px;
+}
+#about:after {
+  content: "";
+  display: block;
+  clear: left;
+}
+/*styles for about section ends*/
+
+/*styles for services section starts*/
+#services {
+  padding: 120px 0;
+  background-color: #e8e3e359;
+}
+#services h1 {
+  font-size: 45px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.service-type {
+  padding: 0 8%;
+}
+.service-type > div {
+  display: inline-block;
+  width: 28%;
+  background-color: #fff;
+  z-index: 1;
+  height: 250px;
+  padding: 4% 2%;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 2px solid #18ba60;
+}
+.service-type > div:nth-child(2) {
+  margin: 0 1.5%;
+}
+.service-img {
+  background-image: url("../Images/service/1.png ");
+  height: 65px;
+  width: 60px;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.service-type > div h3 {
+  text-align: center;
+}
+.service-type > div h3 {
+  text-align: center;
+}
+.service-type > div p {
+  text-align: center;
+}
+.service-type.two {
+  margin-top: 30px;
+}
+.service-relative {
+  position: relative;
+}
+.service-animation {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 0px;
+}
+/*styles for services section ends*/
