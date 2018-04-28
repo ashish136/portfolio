@@ -7,6 +7,14 @@ body {
   width: 100%;
   margin: 0px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
 #main-img {
   height: 100%;
   width: 100%;
@@ -217,7 +225,7 @@ body {
   width: 28%;
   background-color: #fff;
   z-index: 1;
-  height: 250px;
+  /* height: 250px; */
   padding: 4% 2%;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -237,12 +245,17 @@ body {
 }
 .service-type > div h3 {
   text-align: center;
-}
-.service-type > div h3 {
-  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #222;
 }
 .service-type > div p {
   text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  color: #444;
+  margin-bottom: 0px;
+  line-height: 28px;
 }
 .service-type.two {
   margin-top: 30px;
@@ -255,5 +268,16 @@ body {
   bottom: 0px;
   left: 0px;
   height: 0px;
+  border-radius: 5px;
+}
+.service-relative > .service-animation {
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  background-color: #18ba60;
+}
+.ser-animation-content {
+  height: 0px;
+  overflow: hidden;
 }
 /*styles for services section ends*/

@@ -62,7 +62,34 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $(".service-relative").on("hover", function() {
-    $(".service-relative > .service-animation").animate("height", "inherit");
-  });
+  $(".service-relative").hover(
+    function() {
+      $(this)
+        .children(".service-animation")
+        .stop()
+        .animate(
+          {
+            height: "100%"
+          },
+          300
+        );
+      // $("." + $(this).attr("id") + "> div.service-animation").animate({
+      //   height: "100%"
+      // });
+    },
+    function() {
+      $(this)
+        .children(".service-animation")
+        .stop()
+        .animate(
+          {
+            height: "0%"
+          },
+          100
+        );
+      // $("." + $(this).attr("id") + "> .service-animation").animate({
+      //   height: "0%"
+      // });
+    }
+  );
 });
